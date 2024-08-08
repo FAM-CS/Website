@@ -1,6 +1,10 @@
 # Website
 Personal website where I attempt to document and showcase my experience learning about usability, CS, and design.
 
+TODOs/Goals:
+- Build mobile first
+- Strech: have the navbar only appear when scrolling up for mobile devices?
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
