@@ -8,7 +8,7 @@ const theme : Theme = {
         tertiary: "#E2C044",
         accent: "#ED6A5A",
         backgroundSolid: "#4E3C6C",
-        background: "rgba(36,20,60,25)",
+        background: "rgba(36,20,60,0.25)",
     }
 }
 
@@ -18,6 +18,9 @@ export const globalStyles = css`
         font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
         line-height: 1.5;
         font-weight: 400;
+
+        height: 100vh;
+        width: 100vw;
 
         font-synthesis: none;
         text-rendering: optimizeLegibility;
@@ -30,6 +33,12 @@ export const globalStyles = css`
         background-image: url("/tile.svg");
         background-position: center;
     }
+
+    #root {
+        height: 100%;
+        width: 100%;
+    }
+
 
     a {
         font-weight: 500;

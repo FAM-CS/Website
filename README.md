@@ -5,6 +5,10 @@ TODOs/Goals:
 - Build mobile first
 - Strech: have the navbar only appear when scrolling up for mobile devices?
 
+Resources:
+- https://www.aleksandrhovhannisyan.com/blog/svg-tutorial/
+- https://www.nngroup.com/articles/sticky-headers/
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
