@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import styled from '@emotion/styled'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -12,17 +12,19 @@ const Nav = styled.nav`
     position: sticky;
     z-index: 99;
 
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    padding: 10px 20px;
+    padding: 18px 20px;
     padding-top: 20px;
-    background: linear-gradient(${({ theme }) => theme.colors.background}, rgba(256,256,256, 0));
+    background: linear-gradient(180deg, ${({ theme }) => theme.colors.backgroundDark} 0%, rgba(23, 6, 50, 0.00) 100%),
+                url("/tile.svg") bottom;
 
     ul {
-        width: 75%;
-        @media (max-width: 720px) {
+        width: 90%;
+        @media (max-width: 800px) {
             width: 100%;
         }
 
@@ -82,6 +84,10 @@ const LinkHolder = styled.li`
         color: ${({ theme }) => theme.colors.secondary};
     }
 
+    .lengthen {
+        padding: 0 1em;
+    }
+
     &:hover {
         background-color: ${({ theme }) => theme.colors.primaryAlt};
     }
@@ -125,11 +131,12 @@ const NavBar: FC = () => {
 
     return <Nav>
         <ul>
-            <Button>CV</Button>
-            <Button>RESUME</Button>
+            {/* <Button>CV</Button> */}
+            {/* <Button>RESUME</Button> */}
+            <LinkHolder><a className='lengthen' href="MoussaouiFA_CV.pdf">CV</a></LinkHolder>
 
             {isDesktopOrLaptop && <>
-                <LinkHolder className='End'><NavLink to="/about">ABOUT</NavLink></LinkHolder>
+                <LinkHolder className="End"><NavLink to="/">ABOUT</NavLink></LinkHolder>
                 <LinkHolder><NavLink to="/projects">PROJECTS</NavLink></LinkHolder>
                 <LinkHolder><NavLink to="/blog">BLOG</NavLink></LinkHolder>
             </>}
@@ -140,7 +147,7 @@ const NavBar: FC = () => {
                     </Button>
                     {openDropdown &&
                         <div>
-                            <LinkHolder><NavLink onClick={() => setOpenDropdown(false)} to="/about">ABOUT</NavLink></LinkHolder>
+                            <LinkHolder><NavLink onClick={() => setOpenDropdown(false)} to="/">ABOUT</NavLink></LinkHolder>
                             <LinkHolder><NavLink onClick={() => setOpenDropdown(false)} to="/projects">PROJECTS</NavLink></LinkHolder>
                             <LinkHolder><NavLink onClick={() => setOpenDropdown(false)} to="/blog">BLOG</NavLink></LinkHolder>
                         </div>

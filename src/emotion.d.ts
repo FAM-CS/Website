@@ -6,10 +6,12 @@ declare module '@emotion/react' {
       primary: string
       primaryAlt: string
       secondary: string
+      secondaryAlt: string
       tertiary: string
       accent: string
       backgroundSolid: string
       background: string
+      backgroundDark: string
     }
   }
 }

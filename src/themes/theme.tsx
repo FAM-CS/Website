@@ -5,10 +5,12 @@ const theme : Theme = {
         primary: "#8075FF",
         primaryAlt: "#544BB3",
         secondary: "#F1E4F3",
+        secondaryAlt: "#C1B3C3",
         tertiary: "#E2C044",
         accent: "#ED6A5A",
         backgroundSolid: "#4E3C6C",
-        background: "rgba(36,20,60,0.25)",
+        background: "rgba(36,20,60,0.4)",
+        backgroundDark: "#170632"
     }
 }
 
@@ -21,6 +23,7 @@ export const globalStyles = css`
 
         height: 100vh;
         width: 100vw;
+        overflow-y: hidden;     /* pretend this does not exist */
 
         font-synthesis: none;
         text-rendering: optimizeLegibility;
@@ -29,9 +32,12 @@ export const globalStyles = css`
 
         margin: 0;
         color: ${theme.colors.secondary};
-        background-color: ${theme.colors.backgroundSolid};
-        background-image: url("/tile.svg");
-        background-position: center;
+        background:  var(--sunset, linear-gradient(180deg, #4912A0 3.77%, #7168FA 26.31%, #F28A3A 66.87%));
+    }
+
+    h1, h2 {
+        font-size: 22px;
+        margin: 0;
     }
 
     #root {
@@ -42,7 +48,7 @@ export const globalStyles = css`
 
     a {
         font-weight: 500;
-        color: #646cff;
+        color: #9da1f1;
         text-decoration: inherit;
     }
 

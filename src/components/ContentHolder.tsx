@@ -7,8 +7,17 @@ const Content = styled.div`
     flex-direction: column;
     gap: 4px;
 
-    width: calc(88vw - 40px);
-    height: calc(100vh - 60px);
+    width: 60%;
+    height: 100%;
+    overflow-y: hidden;
+
+    @media only screen and (max-width: 800px) {
+        width: 90%;
+    }
+
+    /* @media only screen and (max-width: 500px) {
+        width: 90%;
+    } */
 
     font-size: 16px;
     /* background-color: pink; */
@@ -16,7 +25,7 @@ const Content = styled.div`
 
 
 const ContentHolder: FC<{ children?: React.ReactNode }> = ({ children }) => {
-    return <Content>{children}</Content>
+    return <Content className='contentHolder'>{children}</Content>
 }
 
 export default ContentHolder

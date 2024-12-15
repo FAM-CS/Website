@@ -18,10 +18,27 @@ const Panel = styled.div`
     backdrop-filter: blur(4px);
     border-top: 4px solid ${({ theme }) => theme.colors.secondary};
     border-radius: 20px;
-    padding: 8px;
+    padding: 10px 20px;
+
+    font-size: 18px;
 
     & p {
         margin: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 4em;
+        font-size: 16px;
     }
 `
 
