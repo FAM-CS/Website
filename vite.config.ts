@@ -6,4 +6,5 @@ export default defineConfig({
     plugins: [react({
         jsxImportSource: "@emotion/react",     //? changes where JSX is imported from
     })],
+    base: "https://fam-cs.github.io/"
 })

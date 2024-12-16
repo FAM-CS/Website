@@ -1,10 +1,9 @@
 import { FC } from 'react'
-import styled from '@emotion/styled'
 
 
 const Error: FC = () => {
     return <>
-        <h1>Error</ h1>
+        <h1>Something went wrong, please use the above navigation to go back.</ h1>
     </>
 }
 

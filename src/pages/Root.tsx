@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from '@emotion/styled'
 import NavBar from '../components/NavBar'
-import { Outlet, useNavigation } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Scene from '../components/DoorScene'
 import Footer from '../components/Footer'
 

@@ -1,7 +1,6 @@
 
 import { FC } from 'react'
 import styled from '@emotion/styled'
-import { useMediaQuery } from 'react-responsive'
 
 
 const Scene = styled.div`

@@ -4,7 +4,7 @@ import ContentHolder from '../components/ContentHolder'
 import TextPanel from '../components/TextPanel'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBluesky, faGithub, faGoogleScholar, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faGoogleScholar, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -156,7 +156,7 @@ const About: FC<AppProps> = ({ title }) => {
                 <h1>Links</h1>
                 <ul>
                     <li>
-                        <Link to="#"><FontAwesomeIcon className='icon' icon={faEnvelope}/>fatima.a.moussaoui/AT/gmail/DOT/com</Link>
+                        <Link to="#"><FontAwesomeIcon className='icon' icon={faEnvelope}/>fatima.a.moussaoui AT gmail DOT com</Link>
                     </li>
                     <li>
                         <Link to="https://scholar.google.com/citations?user=RpH7aJ8AAAAJ&hl=en"><FontAwesomeIcon className='icon' icon={faGoogleScholar}/>scholar</Link>

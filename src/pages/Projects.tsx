@@ -50,7 +50,7 @@ const Projects: FC<AppProps> = ({ title }) => {
             <h1>WeatherWave</h1>
                 <p>A weather forecast website using OpenWeather's free API.</p>
                 <ul>
-                    <li><a href="#">Github repository</a></li>
+                    <li><a href="https://github.com/FAM-CS/WeatherWave">Github repository</a></li>
                 </ul>
             </div>
             And... more to come!
