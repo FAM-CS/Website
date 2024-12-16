@@ -932,7 +932,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 
     @media (max-width: 500px) {
-        margin-bottom: 4em;
+        margin-bottom: 5em;
         font-size: 16px;
     }
 `,yd=({children:n})=>ee(ex,{className:"TextPanel",children:ee(tx,{children:n})});/*!
@@ -1058,7 +1058,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         object-fit: contain;
         object-position: bottom center;
     }
-`,sx=({title:n})=>(C.useEffect(()=>{document.title=n},[]),Ie(md,{children:[ee(cx,{children:ee("img",{src:"/fourpetal.svg"})}),Ie(yd,{children:[Ie("div",{children:[ee("h1",{children:"Personal Website"}),ee("p",{children:"Working on my first proper website, designed in Figma and built with React + Typescript."}),ee("ul",{children:ee("li",{children:ee("a",{href:"https://github.com/FAM-CS/Website",children:"Github repository"})})})]}),Ie("div",{children:[ee("h1",{children:"WeatherWave"}),ee("p",{children:"A weather forecast website using OpenWeather's free API."}),ee("ul",{children:ee("li",{children:ee("a",{href:"https://github.com/FAM-CS/WeatherWave",children:"Github repository"})})})]}),"And... more to come!"]})]})),fx=St.div`
+`,sx=({title:n})=>(C.useEffect(()=>{document.title=n},[]),Ie(md,{children:[ee(cx,{children:ee("img",{src:"/fourpetal.svg"})}),Ie(yd,{children:[Ie("div",{children:[ee("h1",{children:"Personal Website"}),ee("p",{children:"Working on my first proper website, designed in Figma and built with React + Typescript."}),ee("ul",{children:ee("li",{children:ee("a",{href:"https://github.com/FAM-CS/Website",children:"Github repo with summary"})})})]}),Ie("div",{children:[ee("h1",{children:"WeatherWave"}),ee("p",{children:"A weather forecast website using OpenWeather's free API."}),ee("ul",{children:ee("li",{children:ee("a",{href:"https://github.com/FAM-CS/WeatherWave",children:"Github repo with summary"})})})]}),"And... more to come!"]})]})),fx=St.div`
     box-sizing: border-box;
     font-size: 18px;
     @media (max-width: 500px) {
