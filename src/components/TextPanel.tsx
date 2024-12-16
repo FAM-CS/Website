@@ -37,7 +37,7 @@ const Panel = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin-bottom: 4em;
+        margin-bottom: 5em;
         font-size: 16px;
     }
 `

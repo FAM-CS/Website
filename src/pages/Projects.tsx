@@ -43,14 +43,14 @@ const Projects: FC<AppProps> = ({ title }) => {
                 <h1>Personal Website</h1>
                 <p>Working on my first proper website, designed in Figma and built with React + Typescript.</p>
                 <ul>
-                    <li><a href="https://github.com/FAM-CS/Website">Github repository</a></li>
+                    <li><a href="https://github.com/FAM-CS/Website">Github repo with summary</a></li>
                 </ul>
             </div>
             <div>
             <h1>WeatherWave</h1>
                 <p>A weather forecast website using OpenWeather's free API.</p>
                 <ul>
-                    <li><a href="https://github.com/FAM-CS/WeatherWave">Github repository</a></li>
+                    <li><a href="https://github.com/FAM-CS/WeatherWave">Github repo with summary</a></li>
                 </ul>
             </div>
             And... more to come!
